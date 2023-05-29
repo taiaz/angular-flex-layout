@@ -1,0 +1,178 @@
+<a
+  href="https://furetechnews.com/how-to-implement-angular-flex-layout/"
+  target="_blank"
+>
+  <h5 class="card-title">How to implement angular flex layout</h5>
+</a>
+<div
+  class="container"
+  fxLayout
+  fxLayoutAlign="center"
+  fxLayoutGap="10px"
+  fxLayoutGap.xs="0"
+>
+  <div class="item" fxFlex="50%">Item 1 - 50 % width</div>
+  <div class="item" fxFlex="30%">Item 2 : 30 % width</div>
+  <div class="item" fxFlex="20%">Item 3 : 20 % width</div>
+</div>
+
+<div fxLayout="row" fxLayoutGap="10px">
+  <div fxFlex="20" class="item">Child One</div>
+  <div fxFlex="20" class="item" fxHide.lt-md>Child - Two</div>
+  <div fxFlex="60" class="item">Child - Three</div>
+</div>
+
+<h5>FfxLayoutAlign default</h5>
+<div fxLayout="row" fxLayoutGap="100px" class="flex-container">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+</div>
+<hr />
+
+<h5>FfxLayoutAlign different</h5>
+<div fxLayout fxLayoutGap="100px">
+  <div class="item">1</div>
+  <div fxLayoutAlign="center center" class="item">2</div>
+  <div fxLayoutAlign="center end" class="item">3</div>
+  <div fxLayoutAlign="end center" class="item">4</div>
+  <div fxLayoutAlign="end end" class="item">5</div>
+</div>
+<hr />
+
+<h5>Flexlayout reverse</h5>
+<div fxLayout="column-reverse" fxLayoutGap="10px">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+</div>
+
+<h5>Flex layout row reverse</h5>
+<div fxLayout="row-reverse" class="flex-container" fxLayoutGap="10px">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+</div>
+<hr />
+
+<h5>Flex layout column</h5>
+<div fxLayout="column" class="flex-container" fxLayoutGap="10px">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+</div>
+<hr />
+
+<h5>5 Fxlayoutalign stretch</h5>
+<div
+  class="box fxLayoutAlignStretch"
+  fxLayoutGap="10px"
+  fxLayoutAlign="stretch"
+  style="height:300px;"
+>
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div fxFlexAlign="center" class="item">3</div>
+  <div fxFlexAlign="end" class="item">4</div>
+</div>
+
+<br />
+
+<div class="box" fxLayoutGap="10px" fxLayoutAlign="space-between">
+  6
+  <div class="item">1. One</div>
+  <div class="item">2. Two</div>
+  <div class="item">3. Three</div>
+  <div class="item">4. Four</div>
+</div>
+
+<div class="outerContainer">
+  7
+  <div fxLayout="row" fxLayoutGap="10px" class="container">
+    <div fxLayoutAlign="center center">1</div>
+    <div fxLayoutAlign="center center">2</div>
+    <div fxLayoutAlign="center center">3</div>
+    <div fxLayoutAlign="center center">4</div>
+  </div>
+</div>
+
+<div
+  style="height: 400px; background-color: yellow"
+  fxLayout="row wrap"
+  fxLayoutAlign="start space-evenly"
+>
+  <div
+    style="background-color: blue; border: 2px solid white;"
+    fxFlex="0 0 33.33%"
+  >
+    Row 1 - Col 1
+  </div>
+  <div
+    style="background-color: blue; border: 2px solid white;"
+    fxFlex="0 0 33.33%"
+  >
+    Row 1 - Col 2
+  </div>
+  <div
+    style="background-color: blue; border: 2px solid white;"
+    fxFlex="0 0 33.33%"
+  >
+    Row 1 - Col 3
+  </div>
+  <div
+    style="background-color: blue; border: 2px solid white;"
+    fxFlex="0 0 20%"
+  >
+    Row 2 - Col 1
+  </div>
+  <div
+    style="background-color: blue; border: 2px solid white;"
+    fxFlex="0 0 20%"
+  >
+    Row 2 - Col 2
+  </div>
+  <div
+    style="background-color: blue; border: 2px solid white;"
+    fxFlex="0 0 20%"
+  >
+    Row 2 - Col 3
+  </div>
+  <div
+    style="background-color: blue; border: 2px solid white;"
+    fxFlex="0 0 20%"
+  >
+    Row 2 - Col 4
+  </div>
+  <div
+    style="background-color: blue; border: 2px solid white;"
+    fxFlex="0 0 20%"
+  >
+    Row 2 - Col 5
+  </div>
+  <div
+    style="background-color: blue; border: 2px solid white;"
+    fxFlex="0 0 25%"
+  >
+    Row 3 - Col 1
+  </div>
+  <div
+    style="background-color: blue; border: 2px solid white;"
+    fxFlex="0 0 25%"
+  >
+    Row 3 - Col 2
+  </div>
+  <div
+    style="background-color: blue; border: 2px solid white;"
+    fxFlex="0 0 25%"
+  >
+    Row 3 - Col 3
+  </div>
+  <div
+    style="background-color: blue; border: 2px solid white;"
+    fxFlex="0 0 25%"
+  >
+    Row 3 - Col 4
+  </div>
+</div>
+
+<router-outlet></router-outlet>
